@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HOME PAGE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /* Style the body */
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+
+        #d1 {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'poppins', sans-serif;
+        }
+
+        h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 2.5vw;
+            text-transform: uppercase;
+            color: orange;
+        }
+
+        h1 span {
+            display: inline-flex;
+            color: orange;
+        }
+
+        h1 span:nth-child(even) {
+            overflow: hidden;
+            transition: ease-in-out 0.5s;
+            color: white;
+
+            letter-spacing: -1em;
+        }
+
+        h1:hover span:nth-child(even) {
+            letter-spacing: 0;
+        }
+
+        h1:hover span-nth-child (2) {
+            transition-delay: 0s;
+        }
+
+        h1:hover span-nth-child (4) {
+            transition-delay: 0.5s;
+        }
+
+        h1:hover span-nth-child (6) {
+            transition-delay: 1s;
+        }
+
+        h1:hover span-nth-child (8) {
+            transition-delay: 1.5s;
+        }
+
+        /* Header/logo Title */
+        .header {
+            padding: 60px;
+            text-align: center;
+
+            color: white;
+        }
+
+        /* Style the top navigation bar */
+        .navbar {
+            display: flex;
+            padding-right: 200px;
+
+
+        }
+
+        /* Style the navigation bar links */
+        .navbar a {
+            color: orange;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            padding-left: 0px;
+        }
+
+        /* Change color on hover */
+        .navbar a:hover {
+
+            color: orange;
+        }
+
+        /* Column container */
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* Create two unequal columns that sits next to each other */
+        /* Sidebar/left column */
+        .side {
+            flex: 30%;
+            padding-top: 150px;
+            padding-left: 20px;
+        }
+
+        .side h1:hover {
+
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        .side ol li {
+            color: bisque;
+            line-height: 115px;
+        }
+
+        /* Main column */
+        .main {
+            flex: 70%;
+
+            padding-top: 300px;
+            padding-left: 2px;
+            padding-right: 40px;
+        }
+
+        /* Fake image, just for this example */
+        .fakeimg {
+
+            width: 100%;
+            padding: 20px;
+        }
+
+        /* Footer */
+        .footer {
+            padding-top: 200px;
+            text-align: center;
+
+            display: -moz-inline-box;
+        }
+
+        #fh {
+            color: wheat;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: large;
+        }
+
+        #f {
+            height: 30px;
+            width: 30px;
+
+        }
+
+        #i {
+            height: 30px;
+            width: 30px;
+        }
+
+        #w {
+            height: 30px;
+            width: 30px;
+        }
+
+        #bid {
+            font-size: 3.2vw;
+            font-style: italic;
+            color: black;
+            background-color: antiquewhite;
+        }
+
+        .navbar {
+            list-style: none;
+            margin-left: 100px;
+            margin-top: 25px;
+            font-size: 20px;
+            padding-left: 0px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: whitesmoke;
+            font-family: Arial;
+            font-weight: bold;
+            transition: 0.2s ease-in-out;
+            padding-left: 20px;
+        }
+
+        #f1 {
+            font-size: large;
+            font-family: 'Times New Roman', Times, serif color: aliceblue;
+            color: white;
+        }
+        h4{
+            color:wheat;
+        }
+
+        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+
+            .row,
+            .navbar,
+            #d1 {
+                flex-direction: column;
+            }
+
+            #h11 {
+                font-size: 15px;
+            }
+            .navbar a{
+                font-size:bold;
+            }
+
+        }
+    </style>
+</head>
+
+<body background="bg2.jpg" width="1080px">
+
+    <!-- Note -->
+    <div id="d1" style="border: 0px solid black; width: 98.7%; height: 80px;">
+        <h1>
+
+            <h1 id="h11">
+
+                <span>A</span><span>leef</span>
+                <span>L</span><span>aam</span>
+                <span>M</span><span>eem</span>
+                <span>O</span><span>nion</span>
+                <span>TRADERS</span>
+                &nbsp;
+                <img src="lg.jpg" float="right" width="25px">
+            </h1>
+
+        </h1>
+
+    </div>
+
+
+    <!-- Header -->
+
+
+
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="ab.html">ABOUT</a>
+        <a href="pr.html">PRODUCTS</a>
+        <a href="cu.html">CONTACT</a>
+
+    </div>
+
+    <!-- The flexible grid (content) -->
+    <div class="row">
+        <div class="side">
+            <h1 id="h1">LATEST OFFERS:</h1>
+            <marquee direction="up" scrolldelay="1">
+                <ol id="li1" type="circle">
+                    <li>1kg Onion only at 25/-</li>
+                    <li>1kg Garlic only at 49/-</li>
+                    <li>1kg Potato only at 25/-</li>
+                </ol>
+            </marquee>
+        </div>
+        <div class="main">
+            <center>
+                <form method="post" action="lp.html">
+                    <button class="btn btn-info" type="submit" id="bid">
+                        START YOUR SHOPPING .... >>
+                    </button>
+                </form>
+            </center>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <center>
+            <h1 id="fh">FOLLOW US ON SOCIAL MEDIA</h1>
+        </center>
+        <br>
+        <center>
+
+            <a href="https://www.facebook.com/a.l.m.traders.1"><img id="f"
+                    src="fb.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.instagram.com/a.l.mtraders/?igshid=YmMyMTA2M2Y="><img id="i"
+                    src="ig.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <a href="https://wa.me/9100321615"><img id="w" src="wa.png"></a>
+
+
+        </center>
+
+        <center>
+            <p id="f1">COPYRIGHT &copy;2022 BY ALMO TRADERS, ALL RIGHTS RESERVED.</p>
+            <h4>Designed by YOUNUS QURESHI</h4>
+        </center>
+    </div>
+
+</body>
+
+</html>

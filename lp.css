@@ -1,0 +1,26 @@
+#c1 {
+    padding-top: 75px;
+    color: aqua;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration-line: underline;
+}
+
+p {
+    padding-top: 30px;
+    font-size: 20px;
+    color: white;
+    font-style: bold;
+
+}
+
+ip {
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 700px) {
+
+    .c1 {
+        flex-direction: column;
+    }
+}

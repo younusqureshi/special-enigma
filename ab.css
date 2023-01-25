@@ -1,0 +1,15 @@
+p {
+    padding-top: 20px;
+    font-size: 10vw;
+    font-family: timesnewroman;
+    color: white;
+    line-height: 2;
+    padding-left: 50px;
+}
+
+h1 {
+    padding-top: 120px;
+    padding-left: 50px;
+    font-family: bold;
+    color: #f0e68c;
+}
